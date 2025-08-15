@@ -1,0 +1,71 @@
+# ===== Unreal Engine (UE4/UE5) =====
+# Build artifacts & caches
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Local-only content (개인 개발자 워크스페이스)
+Content/Developers/
+
+# Plugins: 소스는 추적, 산출물은 무시
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+Plugins/*/DerivedDataCache/
+
+# IDE / Editor
+.vs/
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.VC.db
+*.VC.opendb
+*.opendb
+*.log
+
+# Xcode (macOS/iOS)
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserdata/
+*.xcuserstate
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# (가끔 리포지토리 안에 생기는) 패키징 출력물/스테이징
+WindowsNoEditor/
+LinuxNoEditor/
+MacNoEditor/
+Android_ASTC/
+Android_ETC2/
+Android_DXT/
+iOS/
+HTML5/
+
+# Android 서명(민감정보)
+Build/Android/*.keystore
+Build/Android/keystore.properties
+
+# ===== Keep in Git (중요: 추적 유지) =====
+!Config/**
+!Content/**
+!Source/**
+!Plugins/**/Source/**
+!*.uproject
+!*.uplugin
+
+# ===== Optional (원하면 주석 해제) =====
+# Unreal이 재생성하므로 솔루션/프로젝트 파일 무시
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.csproj
+
+
+/Asset
+/AssetProject
