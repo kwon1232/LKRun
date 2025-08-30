@@ -32,14 +32,12 @@ struct FGameSceneState
 	EGameSceneType Future = EGameSceneType::Menu;
 };
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGameSceneChanging, EGameSceneType, NextScene);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnGameSceneChanged, EGameSceneType, PrevScene, EGameSceneType, NewScene);
-
 UCLASS()
 class LKRUN_API UGameFlowSubsystem : public UGameInstanceSubsystem
 {
 	GENERATED_BODY()
 
 	FGameSceneState GameSceneState;
-	
+
+
 };
