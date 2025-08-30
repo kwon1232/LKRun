@@ -3,6 +3,17 @@
 	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "LKRUN",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"DeveloperSettings",
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
