@@ -9,4 +9,5 @@ UGameFlowSettings::UGameFlowSettings()
 {
 	CategoryName = TEXT("Game"); 
 	SectionName = TEXT("Game Flow");
+
 }
